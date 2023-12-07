@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 *{
   margin: 0;
-  padding: 0;
+  padding: 100;
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
@@ -13,10 +13,12 @@
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #fefdfe;
+
+  background: ;
 }
 ::-webkit-scrollbar-thumb {
-    background: #6e93f7;
+    background:#6BB0B7;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
@@ -27,14 +29,17 @@
 /* navbar styling */
 nav{
   position: fixed;
+  background: white;
+  opacity: 0.5;
   width: 100%;
-  padding: 20px 0;
+  padding: 15px;
   z-index: 998;
   transition: all 0.3s ease;
   font-family: 'Ubuntu', sans-serif;
 }
 nav.sticky{
   background: #4070f4;
+  opacity: 1;
   padding: 13px 0;
 }
 nav .navbar{
@@ -68,7 +73,8 @@ nav .navbar .menu li{
   transition: all 0.4s ease;
 }
 .navbar .menu a:hover{
-  color: #4070f4;
+  color: #020202;
+  font-size: 20px;
 }
 nav.sticky .menu a{
   color: #FFF;
@@ -111,7 +117,7 @@ nav.sticky .menu-btn{
 .home{
   height: 100vh;
   width: 100%;
-  background: url("images/background.png") no-repeat;
+  background: url("Images/bgmenu.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -130,15 +136,15 @@ nav.sticky .menu-btn{
   color: #0E2431;
 }
 .home .text-two{
-  color: #0E2431;
-  font-size: 75px;
+  color: rgb(46, 4, 253);
+  font-size: 60px;
   font-weight: 600;
   margin-left: -3px;
 }
 .home .text-three{
   font-size: 40px;
   margin: 5px 0;
-  color: #4070f4;
+  color: #101011;
 }
 .home .text-four{
   font-size: 23px;
@@ -147,11 +153,13 @@ nav.sticky .menu-btn{
 }
 .home .button{
   margin: 14px 0;
+  
 }
 .home .button button{
   outline: none;
   padding: 8px 16px;
   border-radius: 6px;
+  box-shadow: 0 6px #090909;
   font-size: 25px;
   font-weight: 400;
   background: #4070f4;
@@ -163,9 +171,10 @@ nav.sticky .menu-btn{
 .home .button button:hover{
   border-color: #4070f4;
   background-color: #fff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
   color: #4070f4;
 }
-
 /* About Section Styling */
 /* Those Elements Where We Have Apply Same CSS,
  I'm Selecting Directly 'Section Tag' and 'Class'  */
